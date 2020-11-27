@@ -1,5 +1,4 @@
 Terminal:
-
 For create an environment:
 python -m venv pyenv
 
@@ -13,7 +12,7 @@ Code:
 
 from instapy import InstaPy
 
-session = InstaPy(username="artechno.ltd" , password="@Mayur101130")
+session = InstaPy(username="" , password="")
 session.login()
 
 session.like_by_tags(['javascript' , 'python'], amount=6)
