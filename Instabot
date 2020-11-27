@@ -1,0 +1,29 @@
+Terminal:
+
+For create an environment:
+python -m venv pyenv
+
+For activate an environment:
+pyenv\Scripts\activate
+
+Install pip:
+pip install instapy==0.6.8
+
+Code:
+
+from instapy import InstaPy
+
+session = InstaPy(username="artechno.ltd" , password="@Mayur101130")
+session.login()
+
+session.like_by_tags(['javascript' , 'python'], amount=6)
+
+session.set_do_follow(True , percentage=25)
+
+session.set_do_comment(True, percentage=50)
+session.set_comments(['Love it', 'nice post', 'nice post'])
+
+session.end()
+
+Execution:
+python filename.py
